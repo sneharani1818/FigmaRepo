@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom small tweaks */
+:root{
+  --accent: linear-gradient(90deg, #6366F1, #06B6D4);
+}
+
+.skip-link{position:absolute;left:-1000px;top:auto;width:1px;height:1px;overflow:hidden;}
+.skip-link:focus{left:16px;top:12px;width:auto;height:auto;background:#0f172a;color:white;padding:8px 12px;border-radius:8px}
+
+/* small card shadows */
+.card { @apply bg-slate-800/60 border border-slate-700 rounded-2xl overflow-hidden shadow-lg; }
